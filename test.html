@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Query Example</title>
+    <script src="query.js"></script>
+</head>
+<body>
+<div id="foo">
+    <div></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar baz"></div>
+    <div class="bar baz"></div>
+</div>
+<script>
+     console.log(query('#foo').tagName);
+     console.log(query('.bar').length);
+     console.log(query('.bar.baz').length);
+     console.log(query('div', query('#foo')).length);
+</script>
+</body>
+</html>
