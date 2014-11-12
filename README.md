@@ -1,6 +1,6 @@
 # query
 
-Solution for leveraging the performance benefits of `getElementById`, `getElementsByTagName`, and `getElementsByClassName` for simple CSS selectors when querying the DOM. Please refer to [http://www.ryanmorr.com/improve-the-performance-of-queryselectorall](http://www.ryanmorr.com/improve-the-performance-of-queryselectorall) for more detailed information regarding this project.
+Solution for leveraging the performance benefits of `getElementById`, `getElementsByTagName`, and `getElementsByClassName` for simple CSS selectors when querying the DOM. Please refer to [http://ryanmorr.com/abstract-away-the-performance-faults-of-queryselectorall](http://ryanmorr.com/abstract-away-the-performance-faults-of-queryselectorall) for more detailed information regarding this project.
 
 ## Usage
 
