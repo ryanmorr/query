@@ -1,3 +1,11 @@
+/*
+ * query
+ * Abstraction to querySelectorAll for increased performance and greater usability
+ * @param {String} selector
+ * @param {Element} context
+ * @return {Element/Array}
+ */
+
 (function(win){
     'use strict';
 
