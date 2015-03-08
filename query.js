@@ -10,13 +10,12 @@
 (function(win){
     'use strict';
 
-    var doc = win.document, 
-    simpleRe = /^(#?[\w-]+|\.[\w-.]+)$/, 
+    var simpleRe = /^(#?[\w-]+|\.[\w-.]+)$/, 
     periodRe = /\./g, 
     slice = [].slice;
 
     win.query = function(selector, context){
-        context = context || doc;
+        context = context || document;
         // Redirect call to the more performant function 
         // if it's a simple selector and return an array
         // for easier usage

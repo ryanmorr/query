@@ -4,7 +4,7 @@ Solution for leveraging the performance benefits of `getElementById`, `getElemen
 
 ## Usage
 
-Usage mimics that of your standard selector engine, accepting any CSS selector to query the DOM. The context of the query can be limited by providing a DOM element as an optional second argument. All of the following invocations would be interpreted as a simple selector and thus redirected to the more performant function:
+Usage mimics that of your standard selector engine, accepting any CSS selector to query the DOM. The context of the query can be limited by providing a DOM element as an optional second argument:
 
 ```javascript
 query('#foo');
@@ -12,8 +12,8 @@ query('.foo');
 query('.foo.bar');
 query('div', element);
 ```
-	
-If selecting an element by ID, the first element found will be returned. Otherwise, the resulting node list will be converted into an array before returned.
+
+An array rather than a node list is returned, making available all the methods of the `Array` prototype.
 
 ## License
 
