@@ -22,7 +22,7 @@
         if(simpleRe.test(selector)){
             switch(selector[0]){
                 case '#':
-                    return [context.getElementById(selector.substr(1))];
+                    return [document.getElementById(selector.substr(1))];
                 case '.':
                     return slice.call(context.getElementsByClassName(selector.substr(1).replace(periodRe, ' ')));
                 default:
